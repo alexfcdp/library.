@@ -9,23 +9,15 @@ class TestData
   end
 
   def loading_data(library)
-    author1 = Author.new('Gregory Brown',
-                         'Has run the independently published Practicing Ruby journal since 2010,
-                                   and is the original author of the popular Prawn PDF generation library.')
-    author2 = Author.new('David Chelimsky',
-                         'Developer and lead cavaquinista at @cognitect.')
-    author3 = Author.new('Paolo Perrotta',
-                         'Has more than ten years of experience as a developer and writer')
-    author4 = Author.new('Peter J. Jones',
-                         'Peter J. Jones has been working professionally with Ruby since 2005')
-    author5 = Author.new('Leonard Richardson',
-                         'Author of robotfindskitten,Beautiful Soup,RESTful Web APIs,and Constellation Games')
-    author6 = Author.new('Jay McGavren',
-                         'Jay is a development teacher at Treehouse, and an occasional conference speaker')
-    author7 = Author.new('Dawn Griffiths',
-                         'Popular Series By Dawn Griffiths')
+    author1 = Author.new('Gregory Brown', 'Has run the independently published Practicing Ruby')
+    author2 = Author.new('David Chelimsky', 'Developer and lead cavaquinista at @cognitect')
+    author3 = Author.new('Paolo Perrotta', 'Has more than ten years of experience as a developer')
+    author4 = Author.new('Peter J. Jones', 'Peter J.Jones has been working professionally with Ruby')
+    author5 = Author.new('Leonard Richardson', 'Author of robotfindskitten,Beautiful Soup')
+    author6 = Author.new('Jay McGavren', 'Jay is a development teacher at Treehouse')
+    author7 = Author.new('Dawn Griffiths', 'Popular Series By Dawn Griffiths')
 
-    library.arr_authors = [author1, author2, author3, author4, author5, author6, author7]
+    library.authors = [author1, author2, author3, author4, author5, author6, author7]
 
     book1 = Book.new('Ruby Best Practices', author1)
     book2 = Book.new('The RSpec Book', author2)
@@ -39,7 +31,7 @@ class TestData
     book10 = Book.new('Use a Cabeca!: Rails', author7)
     book11 = Book.new('Head First C', author7)
 
-    library.arr_books = [
+    library.books = [
       book1, book2, book3,
       book4, book5, book6,
       book7, book8, book9,
@@ -67,7 +59,7 @@ class TestData
     reader10 = Reader.new('Aleksandr Semeoshin', 'aleks_sem@gmail.com',
                           'Dnipro', 'ul. Kolkhoznaya', '10')
 
-    library.arr_readers = [
+    library.readers = [
       reader1, reader2, reader3,
       reader4, reader5, reader6,
       reader7, reader8, reader9, reader10
@@ -95,7 +87,7 @@ class TestData
     order20 = Order.new(book3, reader10, '05.05.2018')
     order21 = Order.new(book3, reader3, '06.05.2018')
 
-    library.arr_orders = [
+    library.orders = [
       order1, order2, order3, order4,
       order5, order6, order7, order8,
       order9, order10, order11, order12,

@@ -7,33 +7,49 @@ require_relative '../model/library'
 class AppWrite
   def initialize(library)
     @library = library
-    file_writes(AppReader::FILE_AUTHORS, 'authors')
-    file_writes(AppReader::FILE_BOOKS, 'books')
-    file_writes(AppReader::FILE_READERS, 'readers')
-    file_writes(AppReader::FILE_ORDERS, 'orders')
+    write_all_files
   end
 
   private
 
-  def file_writes(file, name)
-    data_set = File.open(file, 'w')
-    case name
-    when 'authors'
-      @library.arr_authors.each do |author|
-        data_set.write("#{author.name_author};#{author.biography}\n")
+  def write_all_files
+    AppReader::FILES.each do |key, path|
+      File.open(path, 'w') do |data_set|
+        write_data_by_key(key, data_set)
       end
-    when 'books'
-      @library.arr_books.each do |book|
-        data_set.write("#{book.name_book};#{book.author.name_author}\n")
-      end
-    when 'readers'
-      @library.arr_readers.each do |reader|
-        data_set.write("#{reader.name_reader};#{reader.email};#{reader.city};#{reader.street};#{reader.house}\n")
-      end
-    when 'orders'
-      @library.arr_orders.each do |order|
-        data_set.write("#{order.book.name_book};#{order.reader.name_reader};#{order.date}\n")
-      end
+    end
+  end
+
+  def write_data_by_key(key, data_set)
+    case key
+    when :authors then write_authors(data_set)
+    when :books then write_books(data_set)
+    when :readers then write_readers(data_set)
+    when :orders then write_orders(data_set)
+    end
+  end
+
+  def write_authors(data_set)
+    @library.authors.each do |author|
+      data_set.write("#{author.name_author};#{author.biography}\n")
+    end
+  end
+
+  def write_books(data_set)
+    @library.books.each do |book|
+      data_set.write("#{book.name_book};#{book.author.name_author}\n")
+    end
+  end
+
+  def write_readers(data_set)
+    @library.readers.each do |reader|
+      data_set.write("#{reader.name_reader};#{reader.email};#{reader.city};#{reader.street};#{reader.house}\n")
+    end
+  end
+
+  def write_orders(data_set)
+    @library.orders.each do |order|
+      data_set.write("#{order.book.name_book};#{order.reader.name_reader};#{order.date}\n")
     end
   end
 end
