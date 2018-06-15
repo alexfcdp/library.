@@ -19,10 +19,11 @@ class Library
   end
 
   def how_many_order_popular_books
-    get_all_object(:book).sort_by { |_, count| count }.reverse.first(3)
+    books = get_all_object(:book).max_by(3) { |_, count| count }
+    books.to_h.values.inject { |sum, num| sum + num }
   end
 
-  def get_all_object(obj)
-    orders.group_by(&obj).transform_values(&:count)
+  def get_all_object(obj_name)
+    orders.group_by(&obj_name).transform_values(&:count)
   end
 end

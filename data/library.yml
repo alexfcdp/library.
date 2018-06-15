@@ -1,0 +1,203 @@
+--- !ruby/object:Library
+books:
+- !ruby/object:Book
+  name_book: Ruby Best Practices
+  author: Gregory Brown
+- !ruby/object:Book
+  name_book: The RSpec Book
+  author: David Chelimsky
+- !ruby/object:Book
+  name_book: Metaprogramming Ruby 2
+  author: Paolo Perrotta
+- !ruby/object:Book
+  name_book: 'Effective Ruby: 48'
+  author: Peter J. Jones
+- !ruby/object:Book
+  name_book: Ruby Cookbook
+  author: Leonard Richardson
+- !ruby/object:Book
+  name_book: RESTful Web APIs
+  author: Leonard Richardson
+- !ruby/object:Book
+  name_book: RESTful Web Services
+  author: Leonard Richardson
+- !ruby/object:Book
+  name_book: Head First Ruby
+  author: Jay McGavren
+- !ruby/object:Book
+  name_book: 'Use a Cabeca!: Ruby'
+  author: Jay McGavren
+- !ruby/object:Book
+  name_book: 'Use a Cabeca!: Rails'
+  author: Dawn Griffiths
+- !ruby/object:Book
+  name_book: Head First C
+  author: Dawn Griffiths
+authors:
+- !ruby/object:Author
+  name_author: Gregory Brown
+  biography: Has run the independently published Practicing Ruby
+- !ruby/object:Author
+  name_author: David Chelimsky
+  biography: Developer and lead cavaquinista at @cognitect
+- !ruby/object:Author
+  name_author: Paolo Perrotta
+  biography: Has more than ten years of experience as a developer
+- !ruby/object:Author
+  name_author: Peter J. Jones
+  biography: Peter J.Jones has been working professionally with Ruby
+- !ruby/object:Author
+  name_author: Leonard Richardson
+  biography: Author of robotfindskitten,Beautiful Soup
+- !ruby/object:Author
+  name_author: Jay McGavren
+  biography: Jay is a development teacher at Treehouse
+- !ruby/object:Author
+  name_author: Dawn Griffiths
+  biography: Popular Series By Dawn Griffiths
+readers:
+- !ruby/object:Reader
+  name_reader: 
+  email: aleksey@gmail.com
+  city: Dnipro
+  street: st. Kim
+  house: '1'
+- !ruby/object:Reader
+  name_reader: 
+  email: alexander@i.ua
+  city: Dnipro
+  street: st. Baha
+  house: '12'
+- !ruby/object:Reader
+  name_reader: 
+  email: ali@gmail.com
+  city: Dnipro
+  street: st. Vakhrusheva
+  house: '3'
+- !ruby/object:Reader
+  name_reader: 
+  email: andrey@gmail.com
+  city: Dnipro
+  street: st. Artema
+  house: '46'
+- !ruby/object:Reader
+  name_reader: 
+  email: antonV@gmail.com
+  city: Dnipro
+  street: st. Mira
+  house: '152'
+- !ruby/object:Reader
+  name_reader: 
+  email: artem@gmail.com
+  city: Dnipro
+  street: st. Zernovaya
+  house: '6'
+- !ruby/object:Reader
+  name_reader: 
+  email: danil@gmail.com
+  city: Dnipro
+  street: st. 1 Maya
+  house: '127'
+- !ruby/object:Reader
+  name_reader: 
+  email: dim@i.ua
+  city: Dnipro
+  street: st. Baydakovskaya
+  house: '38'
+- !ruby/object:Reader
+  name_reader: 
+  email: elina@gmail.com
+  city: Dnipro
+  street: st. Kviringa
+  house: '291'
+- !ruby/object:Reader
+  name_reader: 
+  email: aleks_sem@i.ua
+  city: Dnipro
+  street: st. Abay
+  house: '101'
+orders:
+- !ruby/object:Order
+  book: Ruby Best Practices
+  reader: Aleksey Zentcev
+  date: '09.04.2018'
+- !ruby/object:Order
+  book: The RSpec Book
+  reader: Alexander Sushko
+  date: 10.04.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Alisa Tilik
+  date: 10.04.2018
+- !ruby/object:Order
+  book: 'Effective Ruby: 48'
+  reader: Andrey Taran
+  date: 10.04.2018
+- !ruby/object:Order
+  book: Ruby Cookbook
+  reader: Anton Voronin
+  date: 15.04.2018
+- !ruby/object:Order
+  book: RESTful Web APIs
+  reader: Artem Ribka
+  date: 16.04.2018
+- !ruby/object:Order
+  book: RESTful Web Services
+  reader: Danil Migrin
+  date: 16.04.2018
+- !ruby/object:Order
+  book: Head First Ruby
+  reader: Dmitryi Vagan
+  date: 25.04.2018
+- !ruby/object:Order
+  book: 'Use a Cabeca!: Ruby'
+  reader: Elina Bets
+  date: 26.04.2018
+- !ruby/object:Order
+  book: 'Use a Cabeca!: Rails'
+  reader: Aleks Semeoshin
+  date: 28.04.2018
+- !ruby/object:Order
+  book: Ruby Cookbook
+  reader: Anton Voronin
+  date: 28.04.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Artem Ribka
+  date: 29.04.2018
+- !ruby/object:Order
+  book: Ruby Best Practices
+  reader: Alisa Tilik
+  date: 01.05.2018
+- !ruby/object:Order
+  book: Ruby Cookbook
+  reader: Aleks Semeoshin
+  date: 03.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Aleks Semeoshin
+  date: 04.05.2018
+- !ruby/object:Order
+  book: Ruby Cookbook
+  reader: Aleks Semeoshin
+  date: 04.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Alisa Tilik
+  date: 04.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Alisa Tilik
+  date: 04.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Aleksey Zentcev
+  date: 04.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Aleks Semeoshin
+  date: 05.05.2018
+- !ruby/object:Order
+  book: Metaprogramming Ruby 2
+  reader: Alisa Tilik
+  date: 06.05.2018

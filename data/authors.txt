@@ -1,7 +1,0 @@
-Gregory Brown;Has run the independently published Practicing Ruby
-David Chelimsky;Developer and lead cavaquinista at @cognitect
-Paolo Perrotta;Has more than ten years of experience as a developer
-Peter J. Jones;Peter J.Jones has been working professionally with Ruby
-Leonard Richardson;Author of robotfindskitten,Beautiful Soup
-Jay McGavren;Jay is a development teacher at Treehouse
-Dawn Griffiths;Popular Series By Dawn Griffiths

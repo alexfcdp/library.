@@ -1,8 +1,8 @@
 class Book
   attr_reader :name_book, :author
 
-  def initialize(name_book, author)
-    @name_book = name_book
-    @author = author
+  def initialize(book_data)
+    @name_book = book_data[:name_book]
+    @author = book_data[:author]
   end
 end
